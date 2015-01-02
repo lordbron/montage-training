@@ -12,13 +12,21 @@
             "properties": {
                 "element": {"#": "main"}
             }
+        },
+        "observableButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "observableButton"},
+                "enabled": true,
+                "label": "Button"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <button data-montage-id="observableButton"></button>
     </div>
 </body>
 </html>
