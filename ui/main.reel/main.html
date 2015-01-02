@@ -17,23 +17,8 @@
                     "type": "action",
                     "useCapture": false,
                     "listener": {"@": "buttonActionListener"}
-                },
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "actionEventListener"}
                 }
             ]
-        },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener",
-            "properties": {
-                "action": "mySecondFunction",
-                "handler": {"@": "owner"}
-            },
-            "_dev": {
-                "isHidden": true
-            }
         },
         "buttonActionListener": {
             "prototype": "montage/core/event/action-event-listener",
