@@ -14,7 +14,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     },
-    observableAction: {
+    observableButtonAction: {
         value: function (event) {
             alert ("obersvableButton Clicked!");
         }
