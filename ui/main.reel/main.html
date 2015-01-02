@@ -16,19 +16,9 @@
                 {
                     "type": "action",
                     "useCapture": false,
-                    "listener": {"@": "actionEventListener"}
+                    "listener": {"@": "owner"}
                 }
             ]
-        },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener",
-            "properties": {
-                "action": "observableAction",
-                "handler": {"@": "owner"}
-            },
-            "_dev": {
-                "isHidden": true
-            }
         },
         "observableButton": {
             "prototype": "digit/ui/button.reel",
