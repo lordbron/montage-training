@@ -19,5 +19,4 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             alert (event.target.identifier + " Clicked!");
         }
     }
-
 });
