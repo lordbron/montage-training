@@ -18,11 +18,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function (event) {
             alert (event.target.identifier + " Clicked!");
         }
-    },
-
-    handleOwnerAction: {
-        value: function (event) {
-        }
     }
 
 });

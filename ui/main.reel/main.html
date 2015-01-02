@@ -17,15 +17,22 @@
                     "type": "action",
                     "useCapture": false,
                     "listener": {"@": "buttonActionListener"}
+                },
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
                 }
             ]
         },
-        "observableButton": {
-            "prototype": "digit/ui/button.reel",
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
             "properties": {
-                "element": {"#": "observableButton"},
-                "enabled": true,
-                "label": "Button"
+                "action": "mySecondFunction",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
             }
         },
         "buttonActionListener": {
@@ -36,6 +43,14 @@
             },
             "_dev": {
                 "isHidden": true
+            }
+        },
+        "observableButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "observableButton"},
+                "enabled": true,
+                "label": "Button"
             }
         }
     }
