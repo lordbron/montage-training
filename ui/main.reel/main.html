@@ -11,6 +11,23 @@
         "owner": {
             "properties": {
                 "element": {"#": "main"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
+        },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "observableAction",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
             }
         },
         "observableButton": {
