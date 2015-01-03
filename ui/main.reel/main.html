@@ -37,12 +37,20 @@
                 "enabled": true,
                 "label": "Button"
             }
+        },
+        "textValueInput": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textValueInput"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <input data-montage-id="textValueInput" type="text">
         <button data-montage-id="observableButton"></button>
     </div>
 </body>
