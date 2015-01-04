@@ -1,4 +1,4 @@
-text/**
+/**
  * @module ui/main.reel
  * @requires montage/ui/component
  */
