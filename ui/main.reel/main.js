@@ -16,7 +16,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     observableAction: {
         value: function (event) {
-            this.delayedValue = textValueInput.value;
+            this.delayedValue = this.templateObjects.textValueInput.value;
         }
     }
 });
