@@ -1,4 +1,4 @@
-/**
+text/**
  * @module ui/main.reel
  * @requires montage/ui/component
  */
@@ -16,7 +16,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     observableAction: {
         value: function (event) {
-            alert (event.target.identifier + " Clicked!");
+            delayedValue = textValueInput.value;
         }
     }
 });
