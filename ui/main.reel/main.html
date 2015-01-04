@@ -55,6 +55,9 @@
             "properties": {
                 "element": {"#": "realtimeText"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.realtimeValue"}
             }
         },
         "textValueInput": {
@@ -62,6 +65,9 @@
             "properties": {
                 "element": {"#": "textValueInput"},
                 "placeholderValue": "Enter New Value"
+            },
+            "bindings": {
+                "value": {"<->": "@owner.realtimeValue"}
             }
         }
     }
