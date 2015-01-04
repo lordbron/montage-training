@@ -10,7 +10,9 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "delayedValue": "delayed",
+                "realtimeValue": "realtime"
             },
             "listeners": [
                 {
@@ -35,6 +37,9 @@
             "properties": {
                 "element": {"#": "delayedText"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.delayedValue"}
             }
         },
         "observableButton": {
@@ -50,13 +55,16 @@
             "properties": {
                 "element": {"#": "realtimeText"},
                 "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.realtimeValue"}
             }
         },
         "textValueInput": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textValueInput"},
-                "placeholderValue": "Text"
+                "placeholderValue": "Enter New Value"
             }
         }
     }
