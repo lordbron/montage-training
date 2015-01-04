@@ -30,12 +30,26 @@
                 "isHidden": true
             }
         },
+        "delayedText": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "delayedText"},
+                "value": "Text"
+            }
+        },
         "observableButton": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "observableButton"},
                 "enabled": true,
-                "label": "Button"
+                "label": "Save"
+            }
+        },
+        "realtimeText": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "realtimeText"},
+                "value": "Text"
             }
         },
         "textValueInput": {
@@ -52,6 +66,8 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input data-montage-id="textValueInput" type="text">
         <button data-montage-id="observableButton"></button>
+        <p data-montage-id="realtimeText"></p>
+        <p data-montage-id="delayedText"></p>
     </div>
 </body>
 </html>
